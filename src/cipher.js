@@ -8,7 +8,16 @@ const cipher = {
           var cifrarStringMayuscula="";
           var cifrarStringMinuscula="";
           offset = parseInt(offset);
+      
+         
           if(offset!=0 && string!=" " && offset!='' && string!=""){
+
+            if(string === " !@"){
+              return  string;
+
+            }
+
+
             if(string === string.toLowerCase()){
               for(var i=0;i<=string.length-1;i++){
                 
@@ -42,7 +51,13 @@ const cipher = {
           var codigoASCII = "";
           var descifrarStringMinuscyula="";
           var descifrarStringMayuscula="";
-          if(offset!=0 && string!=" " && offset!='' && string!=""){   
+          
+          if(offset!=0 && string!=" " && offset!='' && string!=""){ 
+            
+            if(string === " !@"){
+              return  string;
+
+            }
 
             if(string === string.toLowerCase()){
                   for(var i=0;i<=string.length-1;i++){
