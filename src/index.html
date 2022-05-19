@@ -6,53 +6,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">     
-    </div>
+   
     <header>
-      
+      <div class="img-txt-logo">
+        <img src="img/cypher-logo.png">
+        <h1>Cypher</h1>
+      </div>
       <div class="redes-sociales">
         <a href="#"><img src="img/facebook.png" ></a>
         <a href="#"><img src="img/instagram.png"></a>
         <a href="#"><img src="img/linkedin.png"></a>
       </div>
-
-      <div class="img-txt-logo">
-        <img src="img/cypher-logo.png">
-        <h1>Cypher</h1>
-      </div>
-      
     </header>
 
-    <section class="main">
-      
-        <main>  
-          <div class="main-encriptado">
-            <h1>CipherMessenger.com</h1>
-             <p>Encripta tu mensaje secreto</p>
-            
-           <label>Escribe tu mensaje...</label><br>
-            <textarea ></textarea><br><br>
-            <label>offset</label><br>
-            <input type="text"><br><br>
-  
-           <input type="button" value="Encriptar">
-          </div>
+    <section>
+      <figure>
+        <a href="#"><img src="img/hacker.png"></a>
+      </figure>
+
+      <main>  
           
-  
-          <p>Mensaje encriptado</p>
-  
-          <label>Ingresa tu mensaje para Decifrar</label><br><br>
-          <textarea></textarea><br>
-  
-          <input type="button" value="Desencriptar">
-        </main>
-     
-      
+            <h2>CipherMessenger.com</h2>
+                        
+           <label>Ingresa tu Mensaje</label><br>
+           <textarea id="txtMensajeCifrar" value="ingresa"></textarea><br><br>
+            <label>Ingresa OFFSET</label><br>
+            <input type="text" id="txtOffset"><br><br>  
+           <button class = "btn-encriptar" id = "btnCifrar" type="button" value="Encriptar">Encriptar  </button>
+           <button class = "btn-encriptar" id = "btnDescifrar" type="button" value="Descencriptar">Descencriptar  </button><br><br>
+           <label id="txtCifrado"></label><br>
+      </main>       
     </section>
+
     <footer>
       <p>Desarrollado por Elisabeth Farfan</p>
       <p><a href="mailto:elisabethfarfan@gmail.com">elisabethfarfan@gmail.com</a></p>
     </footer>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

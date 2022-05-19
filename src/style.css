@@ -1,0 +1,93 @@
+
+body{
+    background-color: #52BDD4;
+    position:relative;
+
+}
+header{
+    background-color: #127186;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Outfit';
+    font-style: normal;
+    display: flex;
+    
+    
+   }
+footer{
+    background-color: #127186;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Outfit';
+    font-style: normal;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    
+    
+   }    
+h1,p, a{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Outfit';
+    font-style: normal;
+}
+
+.redes-sociales{
+    height: 100px;
+    width: 100px;
+    display:flex; 
+    position:absolute;
+    right:20px;
+    margin: 10px 20px;
+    
+     
+}        
+   
+.img-txt-logo{
+    height: 60px;
+    width: 60px;
+    display: flex;
+    
+}
+
+section{
+    display: flex;
+}
+figure{
+    height: 400px;
+    width: 400px;
+}
+
+main label{
+    font-family: 'Outfit';
+    color: black;
+    text-align: center;
+}
+textarea{
+    height: 100px;
+    width: 400px;
+}
+.btn-encriptar{
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #127186;
+    color: aliceblue;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    
+}
+
+.btn-encriptar:hover {
+    background-color:chocolate;
+    cursor: pointer;
+  }
+
+
+
+  

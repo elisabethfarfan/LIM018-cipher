@@ -2,6 +2,7 @@
 
 ## Índice
 
+* [0. Usuarios](#0-usarios)
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
 * [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
@@ -13,6 +14,12 @@
 * [9. Checklist](#9-checklist)
 
 ***
+## 0. Usarios
+
+Los usuarios que pueden utilizar la aplicación web, son todos aquellos que deseen decifrar un mensaje, se busca realizar una aplicación de messenger cifrado entre dos personas.
+* Los principales usuarios son todas las personas que busquen cifrar mensajes.
+* El objetivo es cifrar algún mensaje
+* Con este aplicativo web buscamos mantener la confidencialidad de los mensajes de las personas, creando un aplicativo que les permite cifrar el texto de forma segura.
 
 ## 1. Preámbulo
 
