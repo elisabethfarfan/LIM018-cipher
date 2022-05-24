@@ -22,6 +22,7 @@ function validar(){
     }
 
 }
+
 function cifrar(){
     validar();
     const mensajeCifrar = document.getElementById('txtMensajeCifrar').value;
