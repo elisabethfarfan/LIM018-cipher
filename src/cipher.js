@@ -1,44 +1,50 @@
 const cipher = {
   // ...
   encode(offset, string){
-
-   
-          var formula;
-          var codigoASCII = "";
-          var cifrarStringMayuscula="";
-          var cifrarStringMinuscula="";
+          
           offset = parseInt(offset);
-      
+          var formula; 
+          var resultado="";
+          var ExpReg = new RegExp(/[A-Z]+/g);  
+          var bandera;
+          var letra;  
          
-          if(offset!=0 && string!=" " && offset!='' && string!=""){
-/*
-            if(string === string.toLowerCase()){
-              for(var i=0;i<=string.length-1;i++){
-                
-                formula=(string.charCodeAt(i)-97 + offset)%26 +97; //charCodeAt ayuda a obterner el codigo ascii de la letra
-                codigoASCII = codigoASCII + formula;            
-                cifrarStringMinuscula = cifrarStringMinuscula + String.fromCharCode(formula); 
-                console.log('hola');     //fromCharCode convierte de Ascii a letra     
-              }
-            return cifrarStringMinuscula;
-
-            }*/
-            if(string === string.toLowerCase()){
+          if((offset!=0 && string!=" ") || (offset!='' && string!="") ){
+            if(string==string.toLowerCase()){
               string = string.toUpperCase();
-              console.log('cadena convertida ', string);
-
+             
+                      for(var j=0;j<=string.length-1;j++){
+                            letra = string.charAt(j);          
+                            bandera= ExpReg.test(letra);   
+                            if(bandera==true){
+                              formula=(string.charCodeAt(j)-65 + offset)%26 +65;
+                              resultado = resultado + String.fromCharCode(formula);
+                                          
+                            }else{
+                              resultado = resultado + letra;
+                                
+                          
+                            }               
+                      }
+                    return resultado.toLocaleLowerCase();
+              
             }
-
-                for(var j=0;j<=string.length-1;j++){
+            for(var k=0;k<=string.length-1;k++){
                   
-                  formula=(string.charCodeAt(j)-65 + offset)%26 +65;
-                  console.log(formula); //charCodeAt ayuda a obterner el codigo ascii de la letra
-                  codigoASCII = codigoASCII + formula;            
-                  cifrarStringMayuscula = cifrarStringMayuscula + String.fromCharCode(formula);      //fromCharCode convierte de Ascii a letra     
-                }
-              return cifrarStringMayuscula;
+              letra = string.charAt(k);          
+              bandera= ExpReg.test(letra); 
 
-                     
+                  if(bandera==true){
+                    formula=(string.charCodeAt(k)-65 + offset)%26 +65;
+                    resultado = resultado + String.fromCharCode(formula);
+                                  
+                  }else{
+                    resultado = resultado + letra;
+                      
+                
+                  }       //fromCharCode convierte de Ascii a letra     
+            }
+          return resultado;
 
           }else{
                console.toThrow(TypeError);
@@ -48,33 +54,60 @@ const cipher = {
   decode(offset, string){
           offset = parseInt(offset);
           var formula;
-          var codigoASCII = "";
-          var descifrarStringMinuscyula="";
+          var ExpReg = new RegExp(/[A-Z]+/g);  
+          var bandera;
+          var letra;
+                    
           var descifrarStringMayuscula="";
+          var descifrarMinuscula="";
           
-          if(offset!=0 && string!=" " && offset!='' && string!=""){ 
-            
-            if(string === string.toUpperCase()){
-            
+          if(offset!=0 && string!=" " && offset!='' && string!=""){             
+            if(string === string.toLowerCase()){
+              string = string.toUpperCase();
+             // console.log('cadena convertida ', string);
+
               for(var j=0;j<=string.length-1;j++){
-                var posicion = string.charCodeAt(j);
-                console.log('posición con el charCodeAt',posicion);
-              
+                letra = string.charAt(j);          
+                bandera= ExpReg.test(letra); 
+                if(bandera==true){
+                  var posicion = string.charCodeAt(j);                             
                   formula=( posicion + 65 - offset)%26 +65;
 
                   if(formula<65){
                     formula=formula+26;
-                  }
+                  }          
+                 descifrarMinuscula = descifrarMinuscula + String.fromCharCode(formula);
+
+                }else{
+                  descifrarMinuscula = descifrarMinuscula + letra;
+                }
                   
-                  console.log('formula',formula); //charCodeAt ayuda a obterner el codigo ascii de la letra
-                  codigoASCII = codigoASCII + formula;            
-                  descifrarStringMayuscula = descifrarStringMayuscula + String.fromCharCode(formula);      //fromCharCode convierte de Ascii a letra     
+                    
                 
               }
-            return descifrarStringMayuscula;
+            return descifrarMinuscula.toLocaleLowerCase();
 
-        }      
-              
+            }
+            for(var k=0;k<=string.length-1;k++){
+              letra = string.charAt(k);          
+              bandera= ExpReg.test(letra); 
+              if(bandera==true){
+                var posicionMayuscula = string.charCodeAt(k);                             
+                formula=( posicionMayuscula + 65 - offset)%26 +65;
+
+                if(formula<65){
+                  formula=formula+26;
+                }
+                descifrarStringMayuscula = descifrarStringMayuscula + String.fromCharCode(formula);
+
+              }else{
+                descifrarStringMayuscula = descifrarStringMayuscula + letra;
+              }
+                
+                
+            }
+               return descifrarStringMayuscula;
+            
           }else{
             console.toThrow(TypeError);
           }
@@ -84,5 +117,6 @@ const cipher = {
   
  
 };
+
 
 export default cipher;
