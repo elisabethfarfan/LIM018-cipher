@@ -33,6 +33,7 @@ function cifrar(){
 }
 
 function descifrar(){
+    validar();
     const mensajeDescifrar = document.getElementById('txtMensajeCifrar').value;
     const offset = document.getElementById('txtOffset').value;
      //cipher.encode(offset,mensajeCifrar)
