@@ -13,6 +13,7 @@ header{
     display: flex;
     
     
+    
    }
 footer{
     background-color: #127186;
@@ -20,18 +21,29 @@ footer{
     color: aliceblue;
     font-family: 'Outfit';
     font-style: normal;
+    
+    
 }
+
 img {
     max-width: 100%;
     max-height: 100%;
     
     
-   }    
+    
+   }
+
+  
 h1,p, a{
     text-align: center;
     color: aliceblue;
     font-family: 'Outfit';
     font-style: normal;
+    font-weight: bold;
+}
+h2{
+    font-weight: bold;
+    text-align: center;
 }
 
 .redes-sociales{
@@ -56,37 +68,60 @@ section{
     display: flex;
 }
 figure{
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
+    display: flex;
 }
 
 main label{
     font-family: 'Outfit';
     color: black;
-    text-align: center;
+    font-weight: bold;
+    
+    
+}
+input{
+    background-color: #f9d99a;
+    box-shadow:2px 2px 6px 2px #000000;
+    border-radius: 6px;
+    margin-top: 13px;
+    
 }
 textarea{
     height: 100px;
     width: 400px;
+    background-color: #f9d99a;
+    box-shadow:2px 2px 6px 2px #000000;
+    border-radius: 6px;    
+    margin-top: 13px;
+    
 }
+
 .btn-encriptar{
+ 
     height: 40px;
     width: 100px;
     border-radius: 4px;
-    background-color: #127186;
-    color: aliceblue;
+    
+    background-color:chocolate;
+    color: #000000;
     border: none;
     text-align: center;
     cursor: pointer;
     font-family:Arial, Helvetica, sans-serif;
-    font-style: normal;
+    font-weight: bold;
+    box-shadow:2px 2px 6px 2px #000000;
+    display: inline-block;
+    margin-right: 50px;
+    
     
 }
 
 .btn-encriptar:hover {
-    background-color:chocolate;
+    background-color: #127186;
     cursor: pointer;
   }
+
 
 
 

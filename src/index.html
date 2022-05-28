@@ -24,17 +24,23 @@
         <a href="#"><img src="img/hacker.png"></a>
       </figure>
 
-      <main>  
-          
-            <h2>CipherMessenger.com</h2>
-                        
-           <label>Ingresa tu Mensaje</label><br>
+      <main class="main-content"> 
+        <h2>CipherMessenger.com</h2>
+
+          <form class="form-cifrar">
+            <label>Ingresa tu Mensaje</label><br>
            <textarea id="txtMensajeCifrar" value="ingresa"></textarea><br><br>
             <label>Ingresa OFFSET</label><br>
             <input type="text" id="txtOffset"><br><br>  
            <button class = "btn-encriptar" id = "btnCifrar" type="button" value="Encriptar">Encriptar  </button>
            <button class = "btn-encriptar" id = "btnDescifrar" type="button" value="Descencriptar">Descencriptar  </button><br><br>
-           <label id="txtCifrado"></label><br>
+           <label>Resultado</label><br>
+           <textarea id="txtCifrado"></textarea><br>
+
+          </form>
+            
+                        
+           
       </main>       
     </section>
 

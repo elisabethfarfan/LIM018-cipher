@@ -8,6 +8,7 @@ const cipher = {
 
           if((offset!=0 && string!=" ") || (offset!='' && string!="") ){
             
+            
             if(string == string.toLowerCase()){
               string = string.toUpperCase();
               //console.log('es  minusculas');
@@ -17,7 +18,11 @@ const cipher = {
                 var ExpReg = new RegExp(/[A-Z]+/g);
                           
                 if(ExpReg.test(letra)){
+                  
                   var formula=(string.charCodeAt(i)-65 + offset)%26 +65; 
+                  if(formula<65){
+                    formula=formula+26;
+                  } 
                 cifrarStringMinuscula = cifrarStringMinuscula + String.fromCharCode(formula);
                 }else{
                   cifrarStringMinuscula = cifrarStringMinuscula + letra;
@@ -37,6 +42,9 @@ const cipher = {
                           
                 if(ExpReg.test(letra)){
                   formula=(string.charCodeAt(j)-65 + offset)%26 +65; 
+                  if(formula<65){
+                    formula=formula+26;
+                  } 
                   cifrarStringMinuscula = cifrarStringMinuscula + String.fromCharCode(formula);
                 }else{
                   cifrarStringMinuscula = cifrarStringMinuscula + letra;
@@ -72,10 +80,10 @@ const cipher = {
               if(ExpReg.test(letra)){
                                          
                    var formula=( string.charCodeAt(i) + 65 - offset)%26 + 65;
-                  /*
+                 
                     if(formula<65){
                       formula=formula+26;
-                    }  */      
+                    }      
                     descifrarStringMinuscula = descifrarStringMinuscula + String.fromCharCode(formula);
               }else{
                 descifrarStringMinuscula = descifrarStringMinuscula + letra;
@@ -93,10 +101,10 @@ const cipher = {
               if(ExpRegMayuscula.test(letraMayuscula)){
                                          
                    var formulaMayuscula=( string.charCodeAt(j) + 65 - offset)%26 + 65;
-                  /*
+                  
                     if(formula<65){
                       formula=formula+26;
-                    }     */   
+                    }      
                     descifrarStringMinuscula = descifrarStringMinuscula + String.fromCharCode(formulaMayuscula);
               }else{
                 descifrarStringMinuscula = descifrarStringMinuscula + letraMayuscula;
