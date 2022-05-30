@@ -80,8 +80,10 @@ const cipher = {
               if(ExpReg.test(letra)){
                                          
                    var formula=( string.charCodeAt(i) + 65 - offset)%26 + 65;
+                   
                  
                     if(formula<65){
+                      
                       formula=formula+26;
                     }      
                     descifrarStringMinuscula = descifrarStringMinuscula + String.fromCharCode(formula);
@@ -102,8 +104,9 @@ const cipher = {
                                          
                    var formulaMayuscula=( string.charCodeAt(j) + 65 - offset)%26 + 65;
                   
-                    if(formula<65){
-                      formula=formula+26;
+                    if(formulaMayuscula<65){
+                      
+                      formulaMayuscula=formulaMayuscula+26;
                     }      
                     descifrarStringMinuscula = descifrarStringMinuscula + String.fromCharCode(formulaMayuscula);
               }else{
