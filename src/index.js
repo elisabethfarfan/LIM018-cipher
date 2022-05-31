@@ -28,7 +28,7 @@ function cifrar(){
     const mensajeCifrar = document.getElementById('txtMensajeCifrar').value;
     const offset = document.getElementById('txtOffset').value;
      //cipher.encode(offset,mensajeCifrar)
-    document.getElementById('txtCifrado').innerHTML= cipher.encode(offset,mensajeCifrar);
+    document.getElementById('txtCifrado').value= cipher.encode(offset,mensajeCifrar);
     
 }
 
@@ -37,6 +37,6 @@ function descifrar(){
     const mensajeDescifrar = document.getElementById('txtMensajeCifrar').value;
     const offset = document.getElementById('txtOffset').value;
      //cipher.encode(offset,mensajeCifrar)
-    document.getElementById('txtCifrado').innerHTML= cipher.decode(offset,mensajeDescifrar);
+    document.getElementById('txtCifrado').value= cipher.decode(offset,mensajeDescifrar);
 
 }

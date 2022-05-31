@@ -12,7 +12,7 @@ const cipher = {
             if(string == string.toLowerCase()){
               string = string.toUpperCase();
               //console.log('es  minusculas');
-              for(var i=0;i<=string.length;i++){
+              for(var i=0;i<string.length;i++){
               
                 var letra = string.charAt(i);
                 var ExpReg = new RegExp(/[A-Z]+/g);
