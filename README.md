@@ -31,7 +31,7 @@ El objetivo del proyecto es crear un chat entre amigas que encripte lo que el us
   *Los usuarios que usen sentirán la tranquilidad de compartir un mensaje que sólo él y su receptor saben el significado.
 
 ### Prototipo 📝
-![prototipo1]("src/img/prototipos/pantallas_page-0002.jpg")
+![prototipo1]("../img/prototipos/pantallas_page-0002.jpg")
 
 En este proyecto crearás una aplicación web que servirá para que el usuario
 pueda cifrar y descifrar un texto indicando un desplazamiento específico de
