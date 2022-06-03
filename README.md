@@ -31,9 +31,26 @@ El objetivo del proyecto es crear un chat entre amigas que encripte lo que el us
   *Los usuarios que usen sentirán la tranquilidad de compartir un mensaje que sólo él y su receptor saben el significado.
 
 ### Prototipo 📝
-<img ="src/img/prototipos/pantallas_page-0002.jpg"  width="250">
+![prototipo1]("src/img/prototipos/pantallas_page-0002.jpg")
 
+En este proyecto crearás una aplicación web que servirá para que el usuario
+pueda cifrar y descifrar un texto indicando un desplazamiento específico de
+caracteres (_offset_).
 
+La temática es libre. Tú debes pensar en qué situaciones de la vida real se
+necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso
+(qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de
+ejemplo:
+
+* Crear claves seguras para el email.
+* Encriptar/cifrar una tarjeta de crédito.
+* Herramienta de mensajería interna de una organización de derechos humanos en
+  una zona de conflicto.
+* Mensajería secreta para parejas.
+
+Trabajando en parejas aprenderán a construir una aplicación web que interactuará
+con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
+como tecnologías.
 
 ## 3. Objetivos de aprendizaje
 
