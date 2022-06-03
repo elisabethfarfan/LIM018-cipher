@@ -12,6 +12,9 @@ btnDescifrar.addEventListener("click",descifrar);
 const btnEnviar = document.getElementById("btnEnviar");
 btnEnviar.addEventListener("click",mensajeFinal);
 
+const btnNuevoMensaje = document.getElementById("btnNuevoMensaje");
+btnNuevoMensaje.addEventListener("click",inicio)
+
 
 function validar(){
     if(document.getElementById('txtMensajeCifrar').value =="" && document.getElementById('txtOffset').value==""){
@@ -57,9 +60,24 @@ function descifrar(){
 }
 
 function mensajeFinal(){
+    
+    document.getElementById("div-mensajeFinal").style.display = 'block';
     const lblNombre = document.getElementById("nameSend").value;
     document.getElementById("form-container").style.display = 'none';
-    document.getElementById('mensajeFinal').innerHTML= 'MENSAJE ENVIADO A '+
+    document.getElementById('mensajeFinal').innerHTML= 'MENSAJE ENVIADO CON ÉXITO A '+
      lblNombre.toUpperCase();
 
+}
+
+function inicio(){
+    document.getElementById("form-login").style.display = 'block';
+    
+    document.getElementById("div-mensajeFinal").style.display = 'none';
+    document.getElementById("form-container").style.display = 'none';
+    document.getElementById("form-login").style.display = 'block';
+    document.getElementById("name").value=' ';
+    document.getElementById("nameSend").value=' ';
+    document.getElementById("txtMensajeCifrar").value=' ';
+    document.getElementById("txtOffset").value=' ';
+    
 }

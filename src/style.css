@@ -5,6 +5,9 @@
 .form-container{
     display: none;
 }
+#div-mensajeFinal{
+    display: none;
+}
 body{
     background: url('img/fondo.jpg');
     background-repeat: no-repeat;
@@ -87,6 +90,7 @@ input, textarea{
 }
 #btnEnviar{
     background: cornflowerblue;
+    width: 100%;
 }
 footer{
     color: #ffff;
