@@ -3,56 +3,111 @@
   <head>
     <meta charset="utf-8">
     <title>Cipher</title>
+    <!--animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <!--FONTAEWSONE-->    
+    <script src="https://kit.fontawesome.com/52b16b83f3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-   
+    
     <header>
-      <div class="img-txt-logo">
-        <img src="img/cypher-logo.png">
-        <h1>Cypher</h1>
-      </div>
-      <div class="redes-sociales">
-        <a href="#"><img src="img/facebook.png" ></a>
-        <a href="#"><img src="img/instagram.png"></a>
-        <a href="#"><img src="img/linkedin.png"></a>
-      </div>
+      <h1>Cypher <span>Amigas.com</span> </h1>  
     </header>
 
-    <section>
-      <figure>
-        <a href="#"><img src="img/hacker.png"></a>
-      </figure>
+    <main>    
+      <section> 
+        <div class="form-login" id="form-login">
+          <h2>LOGIN </h2>         
+            <form >
+                <p>
+                <label id="lbl_nombre">De:</label>
+                <input type="text"  id="name" size="10" placeholder="ingresa aqui tu nombre">
+                </p> 
+    
+                <p>
+                <label id="lbl_nombrePara">Para:</label>
+                <input type="text" id="nameSend" size="10" placeholder="Para quién es el mensaje">
+                </p>   
+                            
+                <p>
+                <button class = "btn-encriptar" id = "btnName" type="button">Siguiente </button>
+                </p>
 
-      <main class="main-content"> 
-        <h2>CipherMessenger.com</h2>
-        <div class="div-form">
-          <form class="form-cifrar">
-            <label>Ingresa tu Mensaje</label><br>
-           <textarea id="txtMensajeCifrar" value="ingresa"></textarea><br><br>
-            <label>Ingresa OFFSET</label><br>
-            <input type="text" id="txtOffset"><br><br>  
-           <button class = "btn-encriptar" id = "btnCifrar" type="button" value="Encriptar">Encriptar  </button>
-           <button class = "btn-encriptar" id = "btnDescifrar" type="button" value="Descencriptar">Descencriptar  </button>
-           <button class = "btn-encriptar" id = "btnReset" type="reset" value="Reset">Reset  </button><br><br>
-           <label>Resultado</label><br>
-           <textarea id="txtCifrado"></textarea><br>
+            </form>
+        </div> 
+      </section>
 
+      <section>  
+        <div class="form-container" id="form-container">
+          <h3 id="lbl_name_recib">HOLA CARLA </h3>
+          <form action="#">
+              
+                <p class="block">
+                  <label>Ingresa tu Mensaje</label><br>
+                  <textarea id="txtMensajeCifrar" value="ingresa" name="txtCifrar" rows="3"></textarea>
+                </p>
+              
+              
+                <p class="block">
+                  <label>Ingresa OFFSET</label><br>
+                  <input type="text" id="txtOffset" name="offset">
+                </p>
+             
+             
+                <p >
+                  <button class = "btn-encriptar" id = "btnCifrar" type="button" value="Encriptar">Encriptar  </button>
+                </p>
+
+                <p>
+                  <button class = "btn-encriptar" id = "btnDescifrar" type="button" value="Descencriptar">Descencriptar  </button>
+                </p>
+              
+                <p>
+                  <button class = "btn-encriptar" id = "btnEnviar" type="button" >Enviar  </button>
+                </p>
+
+                          
           </form>
 
         </div>
-
           
-            
-                        
-           
-      </main>       
-    </section>
+       </section>  
+       <section>
+         <div class="form-login">
+           <label id="mensajeFinal">Mensaje</label>
+         </div>
+       </section>         
+    </main>       
+      
 
     <footer>
-      <p>Desarrollado por Elisabeth Farfan</p>
-      <p><a href="mailto:elisabethfarfan@gmail.com">elisabethfarfan@gmail.com</a></p>
+      <div class="div-footer">
+        <div class="footer-contacto">
+          <p>Desarrollado por Elisabeth Farfan</p>
+            <p><a href="mailto:elisabethfarfan@gmail.com">elisabethfarfan@gmail.com</a></p>
+        </div>
+            
+            
+              <div class="footer-redes-sociales">
+                <ul>
+                  <li><i class="fa-brands fa-facebook"></i></li>
+                  <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+  
+                </ul>
+                
+              </div>
+
+      </div>
+      
+          
     </footer>
+    
 
     <script src="index.js" type="module"></script>
   </body>

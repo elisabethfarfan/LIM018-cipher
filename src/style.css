@@ -1,131 +1,125 @@
-
+@font-face{
+    font-family: 'fuente-title';
+    src: url('fonts/Rakoon_PersonalUse.ttf');
+}
+.form-container{
+    display: none;
+}
 body{
-    background-color: #52BDD4;
-    position:relative;
-
-}
-header{
-    background-color: #127186;
-    text-align: center;
-    color: aliceblue;
-    font-family: 'Outfit';
-    font-style: normal;
-    display: flex;
-    
-    
-    
-   }
-footer{
-    background-color: #127186;
-    text-align: center;
-    color: aliceblue;
-    font-family: 'Outfit';
-    font-style: normal;
-    
+    background: url('img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     
 }
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-    
-   }
-
-  
-h1,p, a{
+h1{
+    font-family: 'fuente-title';
+    font-size: 60px;
+    font-weight: 500;
+    color: rgba(41, 39, 40, 0.774);
     text-align: center;
-    color: aliceblue;
-    font-family: 'Outfit';
-    font-style: normal;
+}
+
+h1 span{
+    color:rgba(231, 34, 93, 0.973) ;
+}
+
+h2,h3{
+    
+    text-align: center;
     font-weight: bold;
-}
-h2{
-    font-weight: bold;
-    text-align: center;
+    
 }
 
-.redes-sociales{
-    height: 100px;
-    width: 100px;
-    display:flex; 
-    position:absolute;
-    right:20px;
-    margin: 10px 20px;
+.form-login{
+    max-width: 350px;    
+    border-radius: 20px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    padding: 40px;
+    color: #ffff;
     
+}
+.form-container{
+    max-width: 500px;    
+    border-radius: 20px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    padding: 40px;
+    color: #ffff;
+}
+.form-container form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form-container form .block{
+    grid-column: 1 / 3;
+}
+
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    background: rgba(248, 244, 246, 0.6);
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
      
-} 
-       
-   
-.img-txt-logo{
-    height: 60px;
-    width: 60px;
-    display: flex;
-    
-}
-
-section{
-    display: flex;
-}
-figure{
-    height: 450px;
-    width: 450px;
-    display: flex;
-}
-
-main label{
-    font-family: 'Outfit';
-    color: black;
-    font-weight: bold;
-    
-    
-}
-input{
-    background-color: #f9d99a;
-    box-shadow:2px 2px 6px 2px #000000;
-    border-radius: 6px;
-    margin-top: 13px;
-    
-}
-textarea{
-    height: 100px;
-    width: 400px;
-    background-color: #f9d99a;
-    box-shadow:2px 2px 6px 2px #000000;
-    border-radius: 6px;    
-    margin-top: 13px;
-    
 }
 
 .btn-encriptar{
- 
-    height: 40px;
-    width: 100px;
-    border-radius: 4px;
-    
-    background-color:chocolate;
-    color: #000000;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 10px ;
+    margin-top: 30px;
+    border-radius: 5px;
     border: none;
+    background:rgba(231, 34, 93, 0.973) ;
+    color: #ffff;
+    font-size: 20px;
+}
+.btn-encriptar:hover{
+    background:darksalmon;
+    opacity: 0.7;
+}
+#btnEnviar{
+    background: cornflowerblue;
+}
+footer{
+    color: #ffff;
+    display: flex;
     text-align: center;
-    cursor: pointer;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    box-shadow:2px 2px 6px 2px #000000;
-    display: inline-block;
-    margin-right: 50px;
-    
-    
+    justify-content: center;
+       
 }
 
-.btn-encriptar:hover {
-    background-color: #127186;
-    cursor: pointer;
-  }
+.footer-contacto p,a{
+    color:rgba(0, 0, 0, 0.774);
+    font-weight: bold;
+}
 
+.footer-redes-sociales ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+   
+}
+.footer-redes-sociales ul li i{
+    display: block;
+    padding: 0 10px;
+    background: rgba(66, 61, 62, 0.973) ;
+    color: #ffff;
+    line-height: 50px;
+    font-size: 20px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
 
-
-
-
-
-
-
-  
+.footer-redes-sociales ul li i:hover{
+    transform: translate(-3px) scale(1.05); 
+    background: darksalmon;
+}
